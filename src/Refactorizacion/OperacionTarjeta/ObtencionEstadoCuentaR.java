@@ -2,14 +2,12 @@ package Refactorizacion.OperacionTarjeta;
 
 import java.io.File;
 
-import Refactorizacion.ControladorDeArchivos;
 import Refactorizacion.Tarjeta.EstadoCuenta;
 import Refactorizacion.Tarjeta.TarjetaCredito;
 
 public class ObtencionEstadoCuentaR extends Operacion{
 
     private EstadoCuenta estado = new EstadoCuenta();
-    ControladorDeArchivos controlador = new ControladorDeArchivos();
     TarjetaCredito tarjetaCredito;
     @Override
     public boolean operar(String line) {

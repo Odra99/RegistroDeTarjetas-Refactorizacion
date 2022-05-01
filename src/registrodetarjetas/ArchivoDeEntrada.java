@@ -9,6 +9,7 @@ import java.io.*;
 public class ArchivoDeEntrada implements Serializable{
     
     Disenio actualizarInstrucciones = new Disenio();
+    ControladorDeArchivos controlador = new ControladorDeArchivos();
 /*
     Este procedimiento sirve para leer el archivo de entrada 
     que contiene todas las instrucciones a ingresar al sistema.
@@ -19,9 +20,9 @@ String line = null;
 Instruccion instruccion = new Instruccion();
 try{
    archivoDeEntrada = new Scanner(new FileReader(path));
-   ControladorDeArchivos.crearArchivo("numeroNacionalCorriente.txt");
-   ControladorDeArchivos.crearArchivo("numeroRegionalCorriente.txt");
-   ControladorDeArchivos.crearArchivo("numeroInternacionalCorriente.txt");
+   controlador.crearArchivo("numeroNacionalCorriente.txt");
+   controlador.crearArchivo("numeroRegionalCorriente.txt");
+   controlador.crearArchivo("numeroInternacionalCorriente.txt");
    
    while (archivoDeEntrada.hasNextLine()){
        line = archivoDeEntrada.nextLine();

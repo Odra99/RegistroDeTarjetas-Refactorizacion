@@ -21,7 +21,7 @@ public class MovimientoR extends Operacion{
         obtenerDatos(line);
         if(tarjeta!=null){
             if(tarjeta.ejecutarMovimiento(tipoDeMovimiento, monto)){
-                ControladorDeArchivos.escribirEnArchivo("Tarjeta"+numeroDeTarjeta+".tacre", tarjeta);     //Actualizacion del objeto en el archivo
+                controlador.escribirEnArchivo("Tarjeta"+numeroDeTarjeta+".tacre", tarjeta);     //Actualizacion del objeto en el archivo
                 String nombreArchivo="Movimiento"+numeroDeTarjeta+tarjeta.getMovCount()+".mvito";                
                 super.guardar(this, nombreArchivo);
                 return true;

@@ -1,11 +1,9 @@
 package Refactorizacion.OperacionTarjeta;
 
-import Refactorizacion.ControladorDeArchivos;
 import Refactorizacion.Tarjeta.TarjetaCredito;
 
 public class CancelacionR extends Operacion {
 
-    ControladorDeArchivos controlador = new ControladorDeArchivos();
     TarjetaCredito tarjeta;
 
     @Override

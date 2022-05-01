@@ -23,7 +23,7 @@ public class ControladorDeArchivos implements Serializable {
     /*
      * El siguiente codigo funciona para escribir archivos binarios en el disco duro
      */
-    public static void escribirEnArchivo(String nombreDelArchivo, Object objetoAEscribir) {
+    public  void escribirEnArchivo(String nombreDelArchivo, Object objetoAEscribir) {
         ObjectOutputStream fileOut;
         try {
             fileOut = new ObjectOutputStream( // Este comando inizializa un nuevo flujo de salida
@@ -36,7 +36,7 @@ public class ControladorDeArchivos implements Serializable {
         }
     }
 
-    public static void crearArchivo(String nombre) {
+    public  void crearArchivo(String nombre) {
         DataOutputStream fileOut;
         try {
             fileOut = new DataOutputStream( // Este comando inizializa un nuevo flujo de salida

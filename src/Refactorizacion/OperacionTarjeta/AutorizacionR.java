@@ -1,6 +1,5 @@
 package Refactorizacion.OperacionTarjeta;
 
-import Refactorizacion.ControladorDeArchivos;
 import Refactorizacion.NumeroTarjeta.AsignadorNumTarjeta;
 import Refactorizacion.Tarjeta.TarjetaCredito;
 import Refactorizacion.Tarjeta.TiposTarjeta.TipoTarjeta;
@@ -15,7 +14,6 @@ public class AutorizacionR extends Operacion {
     boolean estado;
     int limite;
     double credito;    
-    ControladorDeArchivos controlador = new ControladorDeArchivos();
     AsignadorNumTarjeta asignador = new AsignadorNumTarjeta();
     TipoTarjetaFactor tipoFactor = new TipoTarjetaFactor();
 
