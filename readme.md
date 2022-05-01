@@ -29,7 +29,12 @@ No, la mayoría de clases no exceden las 100 líneas a diferencia de las clases 
 2. Eliminacion de archivos inecesarios o vacios.
 
 3. Se unifico los controladores de numero de tarjeta  siendo estos Nacional,Regional e Internacional al archivo ControladorNumTarjetas.java
+**Antes**
+
 ![alt text](/ImgRefactor/DupCode.png)
+
+**Despues**
+
 ![alt text](/ImgRefactor/DupCode2.png)
 
 4. Implementacion de Tipo Tarjeta como objeto
